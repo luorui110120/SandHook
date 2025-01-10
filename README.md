@@ -19,6 +19,11 @@
 - ARM32(no tested)
 - Thumb-2
 
+# Env
+
+- As3.6
+- 配合soload和loadSandhook
+
 # OS
 
 4.4(ART Runtime) - 11.0 dev-preview-1
@@ -122,7 +127,7 @@ if hookers is in plugin(like xposed):
 ```groovy
 provided 'com.swift.sandhook:hookannotation:4.2.0'
 ```
-  
+
 in your plugin
 
 if OS <= 5.1 
@@ -279,11 +284,10 @@ in MyApp.java
 
 //if you want test Android Q, please set true, because SDK_INT of Android Q is still 28
 public final static boolean testAndroidQ = false;
- 
+
 
 # References
 
 - Epic:https://github.com/tiann/epic
 - Yahfa:https://github.com/rk700/YAHFA
-
 
